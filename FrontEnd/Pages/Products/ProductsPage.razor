@@ -1,6 +1,11 @@
 ﻿@page "/products"
 
 <MudContainer Class="mt-16">
+    <MudGrid Justify="Justify.FlexEnd">
+        <MudBadge Content="numberOfProductsInCart" Visible="showCartBadge" Color="Color.Info" Overlap="true">
+            <MudFab Icon="@Icons.Material.Filled.ShoppingCart" Size="Size.Large"/>
+        </MudBadge>
+    </MudGrid>
     <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Tipo de Produto</MudText>
     <MudText Align="Align.Center">Some long pricing text should go here maybe? who knows what text you would want here, i guess i cant fill it in for you.</MudText>
     <MudGrid Class="mt-8">
@@ -37,7 +42,7 @@
                                 <MudNumericField @bind-Value="quantity" Variant="Variant.Text" Min="0" />
                             </MudItem>
                             <MudItem xs="12" sm="6" md="4" Style="align-self: flex-end;">
-                                <MudButton StartIcon="@Icons.Material.Filled.AddShoppingCart" Color="Color.Inherit" Size="Size.Medium">Add</MudButton>
+                                <MudButton StartIcon="@Icons.Material.Filled.AddShoppingCart" Color="Color.Inherit" Size="Size.Medium" OnClick="AddToCart">Add</MudButton>
                             </MudItem>
                         </MudGrid>
                     </MudCardActions>

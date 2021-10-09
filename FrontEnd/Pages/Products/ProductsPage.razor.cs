@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MudBlazor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +10,8 @@ namespace FrontEnd.Pages.Products
     {
         private List<string> listOfProducts = new();
         private int quantity;
+        private int numberOfProductsInCart = 0;
+        private bool showCartBadge = false;
 
         protected async override Task OnInitializedAsync()
         {
@@ -18,6 +21,13 @@ namespace FrontEnd.Pages.Products
             {
                 listOfProducts.Add("teste");
             }
+        }
+
+        private void AddToCart()
+        {
+            Snackbar.Add("Adicionado ao carrinho!", Severity.Success);
+            numberOfProductsInCart++;
+            showCartBadge = true;
         }
     }
 }
