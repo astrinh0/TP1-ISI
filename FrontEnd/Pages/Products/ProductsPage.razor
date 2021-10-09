@@ -1,0 +1,48 @@
+﻿@page "/products"
+
+<MudContainer Class="mt-16">
+    <MudText Typo="Typo.h3" Align="Align.Center" GutterBottom="true">Tipo de Produto</MudText>
+    <MudText Align="Align.Center">Some long pricing text should go here maybe? who knows what text you would want here, i guess i cant fill it in for you.</MudText>
+    <MudGrid Class="mt-8">
+
+        @foreach (var product in listOfProducts)
+        {
+            <MudItem xs="12" sm="6" md="4">
+                <MudCard Elevation="25" Class="rounded-lg pb-4">
+                    <MudCardHeader>
+                        <CardHeaderContent>
+                            <MudText Typo="Typo.h5" Align="Align.Center">Beginner</MudText>
+                        </CardHeaderContent>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <div class="d-flex justify-center">
+                            <MudText Typo="Typo.h3">$5</MudText>
+                            <MudText Typo="Typo.h5" Class="ml-1 mt-5" Color="Color.Secondary">/Monthly</MudText>
+                        </div>
+                        <MudList Class="mx-auto mt-4" Style="width:300px;">
+                            <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                                Unlimited something
+                            </MudListItem>
+                            <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                                10 something
+                            </MudListItem>
+                            <MudListItem Icon="@Icons.Material.Filled.LiveHelp">
+                                No something
+                            </MudListItem>
+                        </MudList>
+                    </MudCardContent>
+                    <MudCardActions Class="d-flex justify-center">
+                        <MudGrid Spacing="3" Justify="Justify.Center">
+                            <MudItem xs="12" sm="6" md="4">
+                                <MudNumericField @bind-Value="quantity" Variant="Variant.Text" Min="0" />
+                            </MudItem>
+                            <MudItem xs="12" sm="6" md="4" Style="align-self: flex-end;">
+                                <MudButton StartIcon="@Icons.Material.Filled.AddShoppingCart" Color="Color.Inherit" Size="Size.Medium">Add</MudButton>
+                            </MudItem>
+                        </MudGrid>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+    </MudGrid>
+</MudContainer>
