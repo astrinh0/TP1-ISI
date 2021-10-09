@@ -32,7 +32,7 @@ namespace RestfullAPI.Context
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.HasDefaultSchema("ANEPC");
+            builder.HasDefaultSchema("DB");
             //builder.ApplyConfiguration(new UserMap());
             //builder.ApplyConfiguration(new MessageMap());
             //builder.ApplyConfiguration(new GroupMap());
