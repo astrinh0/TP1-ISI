@@ -45,7 +45,6 @@ CREATE TABLE "Team" (
  us_id int generated always as identity,
  us_username varchar(20) not null,
  us_password varchar(50) not null,
- us_admin varchar(1) not null,
  constraint PK_us_id primary key (us_id));
 
 
@@ -56,7 +55,10 @@ pn_sns varchar (50) not null,
 pn_email varchar (50) not null,
 pn_covid varchar (1) not null,
 pn_createdate date not null default current_date,
+pn_changedate date,
 constraint PK_pn_id primary key (pn_id));
+
+
 
 
 create table "PersonContact"(
@@ -92,7 +94,7 @@ constraint FK_pn_id foreign key (pcd_pn_id) references "Person"(pn_id)
 
 
 
-
+ 
  
  
  

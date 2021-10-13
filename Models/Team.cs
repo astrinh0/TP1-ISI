@@ -17,6 +17,6 @@ namespace RestfullAPI.Models
 
         //DB where is FK
 
-        public virtual ICollection<Requisition> Requisitions {  get; set; }
+       // public virtual ICollection<Requisition> Requisitions {  get; set; }
     }
 }
