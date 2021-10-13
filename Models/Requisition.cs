@@ -7,6 +7,7 @@ namespace RestfullAPI.Models
     {
         public int Id { get; set; }
         public int TeamId { get; set; }
+        public Team Team { get; set; }
         public EnumStatus Status { get; set; }
         public DateTime CreateDate { get; set; }
         
