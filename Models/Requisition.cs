@@ -1,5 +1,6 @@
 ﻿using RestfullAPI.Consts;
 using System;
+using System.Collections.Generic;
 
 namespace RestfullAPI.Models
 {
@@ -10,7 +11,13 @@ namespace RestfullAPI.Models
         public Team Team { get; set; }
         public EnumStatus Status { get; set; }
         public DateTime CreateDate { get; set; }
-        
+
+
+        //Fk
+
+        public virtual ICollection<RequisitionProduct> RequisitionProducts { get; set; }
+
+
 
     }
 }

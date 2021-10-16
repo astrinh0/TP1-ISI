@@ -30,10 +30,15 @@ namespace RestfullAPI.Context.Mappers
             builder.Property(t => t.ChangeDate)
              .HasColumnName("tm_changedate");
 
-            //builder
-            //  .HasMany(p => p.ReceiveMessages)
-            //  .WithOne(um => um.Receiver)
-            //  .HasForeignKey(um => um.ReceiverId);
+
+            //FK
+
+            builder
+                .HasMany(r => r.Requisitions)
+                .WithOne(t => t.Team)
+                .HasForeignKey(r => r.TeamId);
+
+           
 
         }
     }
