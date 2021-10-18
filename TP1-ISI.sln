@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthServer", "AuthServer\Au
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestfullAPI", "RESTfullAPI\RestfullAPI.csproj", "{4644A838-BF0E-435E-B133-5DC684ECC38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1.Domain", "..\TP1.Domain\TP1.Domain.csproj", "{1B9D7C9C-7DFC-4CE5-A77F-929B516C79B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TP1.Domain", "TP1.Domain\TP1.Domain.csproj", "{867EF5E3-5AC9-4C6A-9D67-AE4746911974}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{4644A838-BF0E-435E-B133-5DC684ECC38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4644A838-BF0E-435E-B133-5DC684ECC38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4644A838-BF0E-435E-B133-5DC684ECC38E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B9D7C9C-7DFC-4CE5-A77F-929B516C79B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B9D7C9C-7DFC-4CE5-A77F-929B516C79B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B9D7C9C-7DFC-4CE5-A77F-929B516C79B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B9D7C9C-7DFC-4CE5-A77F-929B516C79B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867EF5E3-5AC9-4C6A-9D67-AE4746911974}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867EF5E3-5AC9-4C6A-9D67-AE4746911974}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867EF5E3-5AC9-4C6A-9D67-AE4746911974}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867EF5E3-5AC9-4C6A-9D67-AE4746911974}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

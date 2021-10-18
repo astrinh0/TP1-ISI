@@ -1,6 +1,6 @@
 ﻿namespace RestfullAPI.Infrastructure.Repositories
 {
-    public class RequistionRepository : IRequistionRepository
+    public class RequistionRepository : IRequisitionRepository
     {
     }
 }

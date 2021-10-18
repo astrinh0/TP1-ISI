@@ -1,0 +1,12 @@
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.csproj.AssemblyReference.cache
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.AssemblyInfoInputs.cache
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.AssemblyInfo.cs
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.csproj.CoreCompileInputs.cache
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\bin\Debug\net5.0\TP1.Domain.deps.json
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\bin\Debug\net5.0\TP1.Domain.dll
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\bin\Debug\net5.0\ref\TP1.Domain.dll
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\bin\Debug\net5.0\TP1.Domain.pdb
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.dll
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\ref\TP1.Domain.dll
+C:\DEV\VISUALSTUDIO\IPCA\TrabalhoPracticoISI\TP1-ISI\TP1.Domain\obj\Debug\net5.0\TP1.Domain.pdb
