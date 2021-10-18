@@ -11,6 +11,8 @@ using System.Reflection;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
 using RestfullAPI.Context;
+using RestfullAPI.Infrastructure.Services;
+using RestfullAPI.Infrastructure.Repositories;
 
 namespace RestfullAPI
 {
@@ -26,6 +28,25 @@ namespace RestfullAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            //SERVICES
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IRequisitionService, RequisitionService>();
+            services.AddTransient<ITeamService, TeamService>();
+            services.AddTransient<IPersonService, PersonService>();
+
+            //REPOS
+            services.AddTransient<IPersonContactRepository, PersonContactRepository>();
+            services.AddTransient<IPersonCovidRepository, PersonCovidRepository>();
+            services.AddTransient<IPersonRepository, PersonRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IRequisitionProductRepository, IRequisitionProductRepository>();
+            services.AddTransient<IRequisitionRepository, RequisitionRepository>();
+            services.AddTransient<ITeamRepository, TeamRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IVisitRepository, VisitRepository>();
+
             services.AddCors();
 
             services.AddControllers(configure =>
