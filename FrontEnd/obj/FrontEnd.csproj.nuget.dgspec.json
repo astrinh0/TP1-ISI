@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\VISUALSTUDIO\\IPCA\\TrabalhoPracticoISI\\TP1-ISI\\FrontEnd\\FrontEnd.csproj": {}
+    "D:\\Escola\\ISI\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\VISUALSTUDIO\\IPCA\\TrabalhoPracticoISI\\TP1-ISI\\FrontEnd\\FrontEnd.csproj": {
+    "D:\\Escola\\ISI\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\VISUALSTUDIO\\IPCA\\TrabalhoPracticoISI\\TP1-ISI\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "D:\\Escola\\ISI\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\DEV\\VISUALSTUDIO\\IPCA\\TrabalhoPracticoISI\\TP1-ISI\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\jngve\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\VISUALSTUDIO\\IPCA\\TrabalhoPracticoISI\\TP1-ISI\\FrontEnd\\obj\\",
+        "projectPath": "D:\\Escola\\ISI\\FrontEnd\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\joelf\\.nuget\\packages\\",
+        "outputPath": "D:\\Escola\\ISI\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jngve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joelf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +75,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-              "version": "[5.0.11, 5.0.11]"
+              "version": "[5.0.7, 5.0.7]"
             }
           ],
           "frameworkReferences": {
@@ -79,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

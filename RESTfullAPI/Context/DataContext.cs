@@ -12,6 +12,7 @@ namespace RestfullAPI.Context
 
         }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Team> Teams { get; set; }
         //public DbSet<Message> Messages { get; set; }
 
         //public DbSet<Group> Groups { get; set; }
