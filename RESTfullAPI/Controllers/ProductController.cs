@@ -19,13 +19,13 @@ namespace RestfullAPI.Controllers
         }
 
         // GET: api/<ProductController>/GetAllActive
-        [HttpGet("/GetAllActive")]
+        [HttpGet("/GetAllActiveProducts")]
         public Task<List<ProductDTO>> GetAllActive()
         {
             return _productService.GetAllActive();
         }
 
-        [HttpGet("/GetAll")]
+        [HttpGet("/GetAllProducts")]
         public Task<List<ProductDTO>> GetAll()
         {
             return _productService.GetAll();

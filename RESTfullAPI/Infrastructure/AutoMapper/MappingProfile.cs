@@ -10,6 +10,9 @@ namespace RestfullAPI.Infrastructure.AutoMapper
         {
             CreateMap<Product, ProductDTO>()
                 .ReverseMap();
+
+            CreateMap<Team, TeamDTO>()
+                .ReverseMap();
         }
     }
 }

@@ -9,11 +9,10 @@ namespace TP1.Domain.Models.DTO
 {
     public class ProductDTO
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
         public int Stock { get; set; }
         public EnumActive Active { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime? ChangeDate { get; set; }
     }
 }

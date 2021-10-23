@@ -41,12 +41,10 @@ namespace RestfullAPI.Infrastructure.Repositories
 
         public async Task<bool> UpdateProduct(Product product)
         {
-            var productAux = _context.Products.FirstOrDefault(p => p.Name == product.Name);
+            var productAux = _context.Products.FirstOrDefault(p => p.Id == product.Id);
             if (productAux != null)
             {
                 productAux.Name = product.Name;
-                productAux.CreateDate = product.CreateDate;
-                productAux.ChangeDate = product.ChangeDate;
                 productAux.Stock = product.Stock;
                 productAux.Price = product.Price;
                 productAux.Active = product.Active;
@@ -63,9 +61,9 @@ namespace RestfullAPI.Infrastructure.Repositories
         {
             Product product = new Product();
 
-            if (id != null) { product = _context.Products.FirstOrDefault(p => p.Id == id); }
-
             if (name != null) { product = _context.Products.FirstOrDefault(p => p.Name == name); }
+
+            if (id != null) { product = _context.Products.FirstOrDefault(p => p.Id == id); }
 
             if (product != null)
             {
