@@ -37,6 +37,7 @@ namespace RestfullAPI.Context
         {
             builder.HasDefaultSchema("db");
             builder.ApplyConfiguration(new ProductMap());
+            builder.ApplyConfiguration(new TeamMap());
             //builder.ApplyConfiguration(new MessageMap());
             //builder.ApplyConfiguration(new GroupMap());
             //builder.ApplyConfiguration(new GroupMessageMap());
