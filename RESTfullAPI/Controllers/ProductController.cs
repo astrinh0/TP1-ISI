@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestfullAPI.Infrastructure.Services;
+using RestfullAPI.Models;
 using System.Collections.Generic;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Threading.Tasks;
+using TP1.Domain.Models.DTO;
 
 namespace RestfullAPI.Controllers
 {
@@ -9,36 +11,55 @@ namespace RestfullAPI.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        // GET: api/<ProductController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
         {
-            return new string[] { "value1", "value2" };
+            _productService = productService;
+        }
+
+        // GET: api/<ProductController>/GetAllActive
+        [HttpGet("/GetAllActive")]
+        public Task<List<ProductDTO>> GetAllActive()
+        {
+            return _productService.GetAllActive();
+        }
+
+        [HttpGet("/GetAll")]
+        public Task<List<ProductDTO>> GetAll()
+        {
+            return _productService.GetAll();
+            
         }
 
         // GET api/<ProductController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("/GetProductByIdOrName")]
+        public async Task<ProductDTO> GetProductByIdOrName(int? id, string? name)
         {
-            return "value";
+            var result = await _productService.GetProductDTOAsync(id, name);
+
+            return result;
         }
 
-        // POST api/<ProductController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        // POST api/<ProductController>/AddProduct
+        [HttpPost("/AddProduct")]
+        public Task<bool> AddProduct([FromBody] ProductDTO product)
         {
+            return _productService.AddProduct(product);
         }
 
-        // PUT api/<ProductController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        // PUT api/<ProductController>/UpdateProduct
+        [HttpPut("/UpdateProduct")]
+        public Task<bool> Put([FromBody] ProductDTO product)
         {
+            return _productService.UpdateProduct(product);
         }
 
-        // DELETE api/<ProductController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        // DELETE api/<ProductController>/RemoveProduct
+        [HttpDelete("/RemoveProduct")]
+        public Task<bool> RemoveProduct(string? name, int? id)
         {
+            return _productService.RemoveProduct(id, name);
         }
     }
 }

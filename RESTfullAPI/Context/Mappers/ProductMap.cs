@@ -24,7 +24,7 @@ namespace RestfullAPI.Context.Mappers
                 .HasColumnName("pt_price");
 
             builder.Property(t => t.Stock)
-                .HasColumnName("pt_sns");
+                .HasColumnName("pt_stock");
 
             builder.Property(t => t.Active)
                 .HasColumnName("pt_active")

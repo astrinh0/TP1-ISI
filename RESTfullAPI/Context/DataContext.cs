@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RestfullAPI.Context.Mappers;
+using RestfullAPI.Models;
 
 namespace RestfullAPI.Context
 {
@@ -9,7 +11,7 @@ namespace RestfullAPI.Context
         {
 
         }
-        //public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
         //public DbSet<Message> Messages { get; set; }
 
         //public DbSet<Group> Groups { get; set; }
@@ -32,8 +34,8 @@ namespace RestfullAPI.Context
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.HasDefaultSchema("DB");
-            //builder.ApplyConfiguration(new UserMap());
+            builder.HasDefaultSchema("db");
+            builder.ApplyConfiguration(new ProductMap());
             //builder.ApplyConfiguration(new MessageMap());
             //builder.ApplyConfiguration(new GroupMap());
             //builder.ApplyConfiguration(new GroupMessageMap());

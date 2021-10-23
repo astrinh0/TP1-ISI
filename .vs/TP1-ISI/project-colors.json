@@ -25,7 +25,22 @@
       "ProjectGuid": "0c091e21-e99c-4d8d-a758-7cb28fce4841",
       "DisplayName": "FrontEnd",
       "ColorIndex": 3
+    },
+    "4644a838-bf0e-435e-b133-5dc684ecc38e": {
+      "ProjectGuid": "4644a838-bf0e-435e-b133-5dc684ecc38e",
+      "DisplayName": "RestfullAPI",
+      "ColorIndex": 4
+    },
+    "1b9d7c9c-7dfc-4ce5-a77f-929b516c79b0": {
+      "ProjectGuid": "1b9d7c9c-7dfc-4ce5-a77f-929b516c79b0",
+      "DisplayName": "TP1.Domain",
+      "ColorIndex": 5
+    },
+    "867ef5e3-5ac9-4c6a-9d67-ae4746911974": {
+      "ProjectGuid": "867ef5e3-5ac9-4c6a-9d67-ae4746911974",
+      "DisplayName": "TP1.Domain",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 7
 }

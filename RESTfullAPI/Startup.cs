@@ -41,7 +41,7 @@ namespace RestfullAPI
             services.AddTransient<IPersonCovidRepository, PersonCovidRepository>();
             services.AddTransient<IPersonRepository, PersonRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
-            services.AddTransient<IRequisitionProductRepository, IRequisitionProductRepository>();
+            services.AddTransient<IRequisitionProductRepository, RequisitionProductRepository>();
             services.AddTransient<IRequisitionRepository, RequisitionRepository>();
             services.AddTransient<ITeamRepository, TeamRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
@@ -80,6 +80,8 @@ namespace RestfullAPI
 
             services.AddDbContext<DataContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("RESTfullAPI")));
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
 
