@@ -59,12 +59,13 @@ namespace RestfullAPI.Infrastructure.Repositories
 
         public async Task<bool> UpdateTeam(Team input)
         {
+
             var team = await _context.Teams.FirstOrDefaultAsync(x => x.Id == input.Id);
 
             if (team != null)
             {
                 team.Name = input.Name;
-                
+
                 _context.Teams.Update(team);
                 await _context.SaveChangesAsync();
                 return true;
